@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+	--font-geist-sans: var(--font-geist-sans);
+	--font-advent-pro: var(--font-advent-pro);
+}
+
+body::-webkit-scrollbar {
+	width: 0%;
+}
+
+@layer utilities {
+	.padding-x {
+		@apply xl:px-[70px] lg:px-[60px] md:px-[50px] sm:px-[40px];
+	}
+	.padding-y {
+		@apply xl:py-[70px] lg:py-[60px] md:py-[50px] sm:py-[40px];
+	}
+	.heading {
+		@apply xl:text-[50px] lg:text-[60px] md:text-[50px] sm:text-[40px];
+	}
+	.subHeading {
+		@apply xl:text-[28px] lg:text-[25px] md:text-[22px] sm:text-[20px];
+	}
+	.paragraph {
+		@apply xl:text-[18px] lg:text-[17px] md:text-[16px] sm:text-[16px];
+	}
+	.subParagraph {
+		@apply xl:text-[px] lg:text-[px] md:text-[px] sm:text-[px];
+	}
+}
