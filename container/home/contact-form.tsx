@@ -1,8 +1,8 @@
 "use client";
-
-import { arrowright, headphones, mail } from "@/public";
-import { motion } from "framer-motion";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { arrowright, headphones, mail } from "@/public";
+import SplitText from "@/components/split-text";
 
 export default function ContactForm() {
 	return (
@@ -13,9 +13,19 @@ export default function ContactForm() {
 						<p className="w-fit bg-[#CE7E3F] text-white px-4 py-2 rounded-full">
 							GET A QUOTE
 						</p>
-						<h2 className="heading text-white font-bold font-advent-pro leading-tight">
-							Get Support for Your Counseling and Recovery Needs
-						</h2>
+						<SplitText
+							text="Get Support for Your Counseling and Recovery Needs"
+							className="heading text-white font-bold font-advent-pro leading-tight"
+							delay={20}
+							duration={1}
+							ease="power3.out"
+							splitType="chars"
+							from={{ opacity: 0, y: 40 }}
+							to={{ opacity: 1, y: 0 }}
+							threshold={0.1}
+							rootMargin="-100px"
+							textAlign="center"
+						/>
 						<p className="paragraph text-white font-normal leading-normal">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
 							tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
@@ -26,7 +36,7 @@ export default function ContactForm() {
 						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ once: true }}
 						transition={{ duration: 0.8 }}
-						className="w-[70%] mx-auto bg-[#F8F9FA] rounded-2xl p-10 flex flex-col lg:flex-row gap-10 shadow-sm border border-gray-100 absolute -bottom-40">
+						className="w-[70%] mx-auto bg-[#F8F9FA] rounded-2xl p-10 flex flex-col lg:flex-row gap-10 shadow-sm border border-gray-100 absolute -bottom-48">
 						<div className="w-full lg:w-1/2 flex flex-col gap-12">
 							<div className="flex flex-col gap-5">
 								<div className="flex flex-col gap-3 max-w-lg">
