@@ -32,3 +32,10 @@ export { default as surveyimage } from "./surveyimage.png";
 
 export { default as mail } from "./mail.png";
 export { default as headphones } from "./headphones.png";
+
+export { default as abouteapimg } from "./abouteapimg.png";
+export { default as aboutllcimg } from "./aboutllcimg.png";
+export { default as aboutchoseusimg } from "./aboutchoseus.png";
+
+export { default as duidwiimg01 } from "./duidwiimg01.png";
+export { default as duidwiimg02 } from "./duidwiimg02.png";

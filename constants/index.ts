@@ -22,7 +22,7 @@ export const navbarlinks = [
 	{
 		id: 2,
 		title: "About Us",
-		href: "/about-us",
+		href: "/about",
 	},
 	{
 		id: 3,
@@ -51,8 +51,8 @@ export const navbarlinks = [
 	},
 	{
 		id: 8,
-		title: "Blog",
-		href: "/blog",
+		title: "Blogs",
+		href: "/blogs",
 	},
 	{
 		id: 9,
@@ -62,7 +62,7 @@ export const navbarlinks = [
 	{
 		id: 10,
 		title: "Contact Us",
-		href: "/contact-us",
+		href: "/contact",
 	},
 ];
 
@@ -70,26 +70,36 @@ export const servicesData = [
 	{
 		id: 1,
 		title: "Virtual or In-Person Bilingual Evaluations",
+		description:
+			"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
 		image: service01,
 	},
 	{
 		id: 2,
 		title: "Individual and Group Counseling",
+		description:
+			"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
 		image: service02,
 	},
 	{
 		id: 3,
 		title: "Court-Mandated Substance Use Education & Treatment Groups",
+		description:
+			"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
 		image: service03,
 	},
 	{
 		id: 4,
 		title: "Court-Ordered Compliance Monitoring & Aftercare Planning",
+		description:
+			"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
 		image: service04,
 	},
 	{
 		id: 5,
 		title: "MVA Driver Improvement",
+		description:
+			"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
 		image: service05,
 	},
 ];
@@ -206,5 +216,80 @@ export const sideBlogs = [
 	{
 		title: "Healing Through Counseling, Education & Treatment",
 		date: "02 Nov, 2025",
+	},
+];
+
+export const reasonsAboutData = [
+	{
+		id: 1,
+		title: "Certified Expert",
+		desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it.",
+		icon: clinical,
+	},
+	{
+		id: 2,
+		title: "Confidentiality",
+		desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it.",
+		icon: client,
+	},
+	{
+		id: 3,
+		title: "24/7 Premium Support",
+		desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it.",
+		icon: cultural,
+	},
+];
+
+export const faqsData = [
+	{
+		id: 1,
+		question: "What is the difference between a DUI and DWI?",
+		answer:
+			"A DUI (Driving Under the Influence) and DWI (Driving While Intoxicated) are both terms used to describe operating a vehicle while impaired by alcohol or drugs. However, the specific definitions and penalties can vary depending on the state or jurisdiction. In some areas, DUI refers to impairment by alcohol, while DWI refers to impairment by drugs. In other areas, the terms may be used interchangeably or have different legal thresholds for impairment.",
+	},
+	{
+		id: 2,
+		question: "What is the difference between a DUI and DWI?",
+		answer:
+			"A DUI (Driving Under the Influence) and DWI (Driving While Intoxicated) are both terms used to describe operating a vehicle while impaired by alcohol or drugs. However, the specific definitions and penalties can vary depending on the state or jurisdiction. In some areas, DUI refers to impairment by alcohol, while DWI refers to impairment by drugs. In other areas, the terms may be used interchangeably or have different legal thresholds for impairment.",
+	},
+	{
+		id: 3,
+		question: "What is the difference between a DUI and DWI?",
+		answer:
+			"A DUI (Driving Under the Influence) and DWI (Driving While Intoxicated) are both terms used to describe operating a vehicle while impaired by alcohol or drugs. However, the specific definitions and penalties can vary depending on the state or jurisdiction. In some areas, DUI refers to impairment by alcohol, while DWI refers to impairment by drugs. In other areas, the terms may be used interchangeably or have different legal thresholds for impairment.",
+	},
+	{
+		id: 4,
+		question: "What is the difference between a DUI and DWI?",
+		answer:
+			"A DUI (Driving Under the Influence) and DWI (Driving While Intoxicated) are both terms used to describe operating a vehicle while impaired by alcohol or drugs. However, the specific definitions and penalties can vary depending on the state or jurisdiction. In some areas, DUI refers to impairment by alcohol, while DWI refers to impairment by drugs. In other areas, the terms may be used interchangeably or have different legal thresholds for impairment.",
+	},
+	{
+		id: 5,
+		question: "What is the difference between a DUI and DWI?",
+		answer:
+			"A DUI (Driving Under the Influence) and DWI (Driving While Intoxicated) are both terms used to describe operating a vehicle while impaired by alcohol or drugs. However, the specific definitions and penalties can vary depending on the state or jurisdiction. In some areas, DUI refers to impairment by alcohol, while DWI refers to impairment by drugs. In other areas, the terms may be used interchangeably or have different legal thresholds for impairment.",
+	},
+];
+
+export const howItWorkData = [
+	{
+		id: 1,
+		title: "Share your unique link or enter friend’s email",
+		desc: "Tempus tempor quisque odio dolor vel per cras nostra integer.",
+		icon: clinical,
+	},
+	{
+		id: 2,
+		title: "Friend books & attends first session",
+		desc: "Tempus tempor quisque odio dolor vel per cras nostra integer.",
+		icon: client,
+	},
+	{
+		id: 3,
+		title: "You both get reward",
+		desc: "Tempus tempor quisque odio dolor vel per cras nostra integer.",
+		icon: cultural,
 	},
 ];

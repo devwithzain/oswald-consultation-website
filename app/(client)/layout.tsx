@@ -1,4 +1,4 @@
-import { Footer, Navbar } from "@/components";
+import { ContactForm, Footer, Navbar } from "@/components";
 
 export default function RootLayout({
 	children,
@@ -9,6 +9,7 @@ export default function RootLayout({
 		<>
 			<Navbar />
 			{children}
+			<ContactForm />
 			<Footer />
 		</>
 	);

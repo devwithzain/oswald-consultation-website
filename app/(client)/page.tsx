@@ -3,7 +3,6 @@ import {
 	HomeHero,
 	HomeAbout,
 	HomeServices,
-	HomeContactForm,
 	HomeSpecialists,
 	HomeWhyChooseUs,
 } from "@/container";
@@ -20,7 +19,6 @@ export default function HomePage() {
 			<Testimonials />
 			<HomeBlog />
 			<CTA />
-			<HomeContactForm />
 		</>
 	);
 }
