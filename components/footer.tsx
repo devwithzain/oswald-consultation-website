@@ -43,7 +43,7 @@ export default function Footer() {
 								/>
 							</div>
 						</div>
-						<div className="flex flex-wrap gap-3 items-center justify-center text-sm text-gray-300">
+						<div className="flex flex-wrap gap-3 items-center justify-center paragraph text-gray-300">
 							{navbarlinks.map((link) => (
 								<Link
 									key={link.id}
@@ -62,19 +62,19 @@ export default function Footer() {
 										className="w-4 h-4 group-hover:translate-x-1 transition-transform text-white"
 									/>
 								</button>
-								<div className="flex gap-3 text-sm text-gray-300">
+								<div className="flex gap-3 paragraph text-gray-300">
 									<Link
-										href="#"
+										href="/terms-of-use"
 										className="paragraph text-white hover:text-[#CE7E3F] transition font-normal leading-tight">
 										Terms of use
 									</Link>
 									<Link
-										href="#"
+										href="/privacy-policy"
 										className="paragraph text-white hover:text-[#CE7E3F] transition font-normal leading-tight">
 										Privacy Policy
 									</Link>
 									<Link
-										href="#"
+										href="/cookie-policy"
 										className="paragraph text-white hover:text-[#CE7E3F] transition font-normal leading-tight">
 										Cookie Policy
 									</Link>
@@ -83,7 +83,7 @@ export default function Footer() {
 						</div>
 					</div>
 				</div>
-				<div className="border-t border-white/20 py-4 flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-gray-400">
+				<div className="border-t border-white/20 py-4 flex flex-col md:flex-row items-center justify-between gap-6 paragraph text-gray-400">
 					<p className="paragraph text-white font-normal leading-normal">
 						Copyright © {new Date().getFullYear()}, All Rights Reserved.
 					</p>

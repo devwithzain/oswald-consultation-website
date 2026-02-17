@@ -36,7 +36,7 @@ export default function Testimonials() {
 									width={50}
 									height={50}
 								/>
-								<p className="paragraph text-gray-600 italic leading-loose text-lg relative z-10">
+								<p className="paragraph text-gray-600 italic leading-loose paragraph relative z-10">
 									&quot;{testimonial.text}&quot;
 								</p>
 								<Image
@@ -58,12 +58,10 @@ export default function Testimonials() {
 									/>
 								</div>
 								<div className="flex flex-col">
-									<h4 className="text-xl font-bold text-white font-advent-pro">
+									<h4 className="subHeading font-bold text-white font-advent-pro">
 										{testimonial.name}
 									</h4>
-									<p className="paragraph text-[#CE7E3F] text-sm">
-										{testimonial.role}
-									</p>
+									<p className="paragraph text-[#CE7E3F]">{testimonial.role}</p>
 								</div>
 							</div>
 						</motion.div>

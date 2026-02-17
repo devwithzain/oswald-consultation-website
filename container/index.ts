@@ -44,3 +44,8 @@ export { default as ResourcesHero } from "./resources/hero";
 export { default as ResourcesBlog } from "./resources/blog";
 export { default as ResourcesTeam } from "./resources/team";
 export { default as ResourcesServices } from "./resources/services";
+
+export { default as LegalHero } from "./legal/hero";
+export { default as TermsOfUse } from "./legal/terms-of-use";
+export { default as CookiePolicy } from "./legal/cookie-policy";
+export { default as PrivacyPolicy } from "./legal/privacy-policy";

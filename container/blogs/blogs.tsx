@@ -37,13 +37,13 @@ export default function Blog() {
 									/>
 								</div>
 								<div className="mt-6 space-y-2">
-									<p className="text-sm font-bold text-[#293B48] leading-tight">
+									<p className="paragraph font-bold text-[#293B48] leading-tight">
 										{blog.category}
 									</p>
 									<h3 className="subHeading font-bold text-[#293B48] leading-tight font-advent-pro group-hover:text-[#CE7E3F] transition">
 										{blog.title}
 									</h3>
-									<p className="text-sm text-[#CE7E3F] font-medium leading-tight">
+									<p className="paragraph text-[#CE7E3F] font-medium leading-tight">
 										{blog.date}
 									</p>
 									<p className="text-[#293B48] paragraph leading-normal font-normal">

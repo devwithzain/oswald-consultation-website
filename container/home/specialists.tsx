@@ -56,7 +56,7 @@ export default function Specialists() {
 									{specialist.role}
 								</p>
 								<div className="mt-4 pt-4 border-t border-white/10 flex items-center justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
-									<p className="paragraph text-white/60 text-sm">
+									<p className="paragraph text-white/60 paragraph">
 										View Profile
 									</p>
 									<span className="text-white">→</span>
