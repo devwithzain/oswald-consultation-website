@@ -39,3 +39,8 @@ export { default as ReferralContactForm } from "./referral/contact-form";
 
 export { default as SurveyFormHero } from "./survey-form/hero";
 export { default as SurveyContactForm } from "./survey-form/contact-form";
+
+export { default as ResourcesHero } from "./resources/hero";
+export { default as ResourcesBlog } from "./resources/blog";
+export { default as ResourcesTeam } from "./resources/team";
+export { default as ResourcesServices } from "./resources/services";

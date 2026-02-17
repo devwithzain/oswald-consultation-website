@@ -13,10 +13,10 @@ body::-webkit-scrollbar {
 
 @layer utilities {
 	.padding-x {
-		@apply xl:px-[70px] lg:px-[60px] md:px-[50px] sm:px-[40px];
+		@apply xl:px-[50px] lg:px-[42px] md:px-[38px] sm:px-[20px];
 	}
 	.padding-y {
-		@apply xl:py-[70px] lg:py-[60px] md:py-[50px] sm:py-[40px];
+		@apply xl:py-[50px] lg:py-[42px] md:py-[38px] sm:py-[20px];
 	}
 	.heading {
 		@apply xl:text-[50px] lg:text-[60px] md:text-[50px] sm:text-[40px];

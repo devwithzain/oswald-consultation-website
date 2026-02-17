@@ -1,6 +1,7 @@
 import {
 	blog01,
 	blog02,
+	blog03,
 	client,
 	client01,
 	client02,
@@ -11,6 +12,8 @@ import {
 	service03,
 	service04,
 	service05,
+	team01,
+	team02,
 } from "@/public";
 
 export const navbarlinks = [
@@ -202,6 +205,15 @@ export const featuredBlogs = [
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcor mattis, pulvinar dapibus leo.",
 		image: blog02,
 	},
+	{
+		id: 3,
+		title: "DUI & Personal Counseling Services",
+		category: "Exercise",
+		date: "02 Nov, 2025",
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcor mattis, pulvinar dapibus leo.",
+		image: blog03,
+	},
 ];
 
 export const sideBlogs = [
@@ -291,5 +303,26 @@ export const howItWorkData = [
 		title: "You both get reward",
 		desc: "Tempus tempor quisque odio dolor vel per cras nostra integer.",
 		icon: cultural,
+	},
+];
+
+export const teamData = [
+	{
+		id: 1,
+		title: "Dr. Ozzie",
+		role: "President/CEO",
+		exp: "Total Experience: 5+ Years Overall",
+		rating: 5,
+		desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+		image: team01,
+	},
+	{
+		id: 2,
+		title: "Dr. Kate ",
+		role: "Clinical Director",
+		exp: "Total Experience: 5+ Years Overall",
+		rating: 3,
+		desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+		image: team02,
 	},
 ];

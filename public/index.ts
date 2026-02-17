@@ -27,6 +27,7 @@ export { default as triangledown } from "./triangledown.png";
 
 export { default as blog01 } from "./blog01.png";
 export { default as blog02 } from "./blog02.png";
+export { default as blog03 } from "./blog03.png";
 
 export { default as surveyimage } from "./surveyimage.png";
 
@@ -39,3 +40,7 @@ export { default as aboutchoseusimg } from "./aboutchoseus.png";
 
 export { default as duidwiimg01 } from "./duidwiimg01.png";
 export { default as duidwiimg02 } from "./duidwiimg02.png";
+
+export { default as star } from "./star.svg";
+export { default as team01 } from "./team01.png";
+export { default as team02 } from "./team02.png";

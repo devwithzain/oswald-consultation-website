@@ -36,7 +36,7 @@ export default function BlogSection() {
 				</div>
 				<div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-5">
 					<div className="lg:col-span-2 grid md:grid-cols-2 gap-5">
-						{featuredBlogs.map((blog, index) => (
+						{featuredBlogs.slice(0, 2).map((blog, index) => (
 							<motion.div
 								key={blog.id}
 								initial={{ opacity: 0, y: 40 }}
