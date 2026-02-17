@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 import ReactLenis from "lenis/react";
 import type { Metadata } from "next";
-import { Geist, Advent_Pro } from "next/font/google";
+import { Geist, DM_Serif_Text } from "next/font/google";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -9,10 +9,10 @@ const geistSans = Geist({
 	weight: ["400", "500", "600", "700", "800", "900"],
 });
 
-const adventPro = Advent_Pro({
-	variable: "--font-advent-pro",
+const dmSerifText = DM_Serif_Text({
+	variable: "--font-dm-serif-text",
 	subsets: ["latin"],
-	weight: ["400", "500", "600", "700", "800", "900"],
+	weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -28,7 +28,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`${geistSans.variable} ${adventPro.variable} antialiased font-geist-sans`}>
+				className={`${geistSans.variable} ${dmSerifText.variable} antialiased font-geist-sans`}>
 				<ReactLenis />
 				{children}
 			</body>

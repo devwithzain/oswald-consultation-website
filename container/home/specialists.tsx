@@ -13,7 +13,7 @@ export default function Specialists() {
 						<p className="w-fit bg-[#CE7E3F] text-white px-4 py-2 rounded-full">
 							Online Appointments
 						</p>
-						<h2 className="heading text-white font-bold font-advent-pro leading-tight">
+						<h2 className="heading text-white font-medium font-dm-serif-text leading-tight">
 							Let&apos;s Meet With Our
 							<br /> Professional Specialists Profiles
 						</h2>
@@ -49,7 +49,7 @@ export default function Specialists() {
 							/>
 							<div className="absolute inset-0 bg-linear-to-t from-[#293B48]/90 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
 							<div className="absolute bottom-0 left-0 right-0 p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-								<p className="text-2xl font-bold text-white font-advent-pro mb-1">
+								<p className="text-2xl font-bold text-white font-dm-serif-text mb-1">
 									{specialist.name}
 								</p>
 								<p className="paragraph text-[#CE7E3F] font-medium">

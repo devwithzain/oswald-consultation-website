@@ -9,10 +9,10 @@ export default function Footer() {
 		<footer className="w-full bg-[#293B48]">
 			<div className="w-[80%] mx-auto">
 				<div className="flex flex-col gap-16 padding-y">
-					<div className="bg-white/15 rounded-xl p-8 flex flex-col md:flex-row items-center justify-between gap-5">
+					<div className="bg-white/15 rounded-xl p-12 flex flex-col md:flex-row items-center justify-between gap-5">
 						<div className="max-w-2xl flex flex-col gap-3">
-							<h2 className="subHeading font-semibold text-white font-advent-pro leading-tight">
-								We Welcome You To Givechance To Serve You
+							<h2 className="subHeading font-medium capitalize text-white font-dm-serif-text leading-tight">
+								We Welcome You To <br /> Givechance To Serve You
 							</h2>
 							<p className="paragraph text-white font-normal leading-normal">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit

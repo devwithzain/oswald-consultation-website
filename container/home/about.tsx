@@ -28,7 +28,7 @@ export default function About() {
 						transition={{ duration: 0.6, delay: 0.4 }}
 						className="bg-[#293B48] rounded-2xl shadow-xl absolute bottom-10 -right-[80%] hidden md:flex items-center py-5">
 						<div className="max-w-md h-[200px] px-8 flex flex-col justify-between gap-2">
-							<h2 className="text-4xl font-bold text-white leading-tight font-advent-pro">
+							<h2 className="text-4xl font-bold text-white leading-tight font-dm-serif-text">
 								EAP
 							</h2>
 							<p className="paragraph text-white font-normal leading-normal">
@@ -43,7 +43,7 @@ export default function About() {
 						</div>
 						<div className="w-px h-72 bg-white" />
 						<div className="max-w-md h-[200px] px-8 flex flex-col justify-between gap-2">
-							<h2 className="text-4xl font-bold text-white leading-tight font-advent-pro">
+							<h2 className="text-4xl font-bold text-white leading-tight font-dm-serif-text">
 								12 Hour Education
 							</h2>
 							<p className="paragraph text-white font-normal leading-normal">
@@ -65,10 +65,10 @@ export default function About() {
 					transition={{ duration: 0.8 }}
 					className="w-full lg:w-1/2 flex flex-col gap-8">
 					<div className="flex flex-col gap-4">
-						<p className="text-base text-[#CE7E3F] font-medium leading-tight uppercase tracking-tight bg-[#CE7E3F]/10 w-fit px-4 py-2 rounded-full">
+						<p className="text-base text-[#CE7E3F] font-medium leading-tight tracking-tight bg-[#CE7E3F]/10 w-fit px-4 py-2 rounded-full">
 							About Us
 						</p>
-						<h2 className="heading text-[#293B48] font-bold font-advent-pro leading-tight">
+						<h2 className="heading text-[#293B48] font-medium font-dm-serif-text leading-tight">
 							DUI/DWI & Substance Abuse Services
 						</h2>
 					</div>

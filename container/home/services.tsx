@@ -21,7 +21,7 @@ export default function Services() {
 							className="w-fit bg-[#CE7E3F] text-white px-4 py-2 rounded-full">
 							Services
 						</Link>
-						<h2 className="subHeading text-white font-bold font-advent-pro leading-tight">
+						<h2 className="subHeading text-white font-medium font-dm-serif-text leading-tight">
 							Get treatment for all your mental healthcare needs.
 						</h2>
 					</div>

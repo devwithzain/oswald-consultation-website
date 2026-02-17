@@ -26,7 +26,7 @@ export default function DUI() {
 						viewport={{ once: true }}
 						transition={{ duration: 0.8 }}
 						className="w-full lg:w-1/2 flex flex-col gap-5">
-						<h2 className="heading text-[#293B48] font-bold font-advent-pro leading-tight">
+						<h2 className="heading text-[#293B48] font-medium font-dm-serif-text leading-tight">
 							DUI/DWI & Substance Abuse Services
 						</h2>
 						<p className="paragraph text-[#293B48] font-normal leading-normal">
@@ -56,7 +56,7 @@ export default function DUI() {
 						viewport={{ once: true }}
 						transition={{ duration: 0.8 }}
 						className="w-full lg:w-1/2 flex flex-col gap-5">
-						<h2 className="heading text-white font-bold font-advent-pro leading-tight">
+						<h2 className="heading text-white font-medium font-dm-serif-text leading-tight">
 							DUI/DWI & Substance Abuse Services
 						</h2>
 						<p className="paragraph text-white font-normal leading-normal">

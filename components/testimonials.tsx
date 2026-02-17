@@ -12,7 +12,7 @@ export default function Testimonials() {
 					<div className="w-fit bg-[#CE7E3F] text-white px-4 py-2 rounded-full">
 						Testimonials
 					</div>
-					<h2 className="heading text-white font-bold font-advent-pro leading-tight">
+					<h2 className="heading text-white font-medium font-dm-serif-text leading-tight">
 						What They&apos;re <br /> Talking About Company?
 					</h2>
 					<p className="paragraph text-white font-normal leading-normal">
@@ -58,7 +58,7 @@ export default function Testimonials() {
 									/>
 								</div>
 								<div className="flex flex-col">
-									<h4 className="subHeading font-bold text-white font-advent-pro">
+									<h4 className="subHeading font-bold text-white font-dm-serif-text">
 										{testimonial.name}
 									</h4>
 									<p className="paragraph text-[#CE7E3F]">{testimonial.role}</p>

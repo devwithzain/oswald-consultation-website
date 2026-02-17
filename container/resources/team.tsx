@@ -8,7 +8,7 @@ export default function Team() {
 	return (
 		<div className="w-full padding-x padding-y">
 			<div className="w-full flex flex-col items-center justify-center gap-10">
-				<h2 className="heading text-[#293B48] font-bold font-advent-pro leading-tight">
+				<h2 className="heading text-[#293B48] font-medium font-dm-serif-text leading-tight">
 					Meet The Team
 				</h2>
 				<div className="w-[80%] flex flex-col items-center gap-10">
@@ -39,7 +39,7 @@ export default function Team() {
 								transition={{ duration: 0.8 }}
 								className="w-full flex flex-col gap-5">
 								<div className="flex flex-col gap-1">
-									<h2 className="heading text-[#293B48] font-bold font-advent-pro leading-tight">
+									<h2 className="heading text-[#293B48] font-medium font-dm-serif-text leading-tight">
 										{item.title}
 									</h2>
 									<p className="paragraph text-[#CE7E3F] font-semibold leading-normal">

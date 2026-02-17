@@ -15,7 +15,7 @@ export default function ContactForm() {
 						</p>
 						<SplitText
 							text="Get Support for Your Counseling and Recovery Needs"
-							className="heading text-white font-bold font-advent-pro leading-tight"
+							className="heading text-white font-medium font-dm-serif-text leading-tight"
 							delay={20}
 							duration={1}
 							ease="power3.out"
@@ -43,7 +43,7 @@ export default function ContactForm() {
 									<div className="w-fit bg-[#CE7E3F] text-white px-4 py-2 rounded-full">
 										Need more help?
 									</div>
-									<h2 className="subHeading text-[#293B48] font-bold font-advent-pro leading-tight">
+									<h2 className="subHeading text-[#293B48] font-medium font-dm-serif-text leading-tight">
 										Get Support for Your <br />
 										Counseling and Recovery Needs
 									</h2>
@@ -64,7 +64,7 @@ export default function ContactForm() {
 										<p className="text-base text-[#293B48] font-bold leading-tight">
 											Customer Service
 										</p>
-										<p className="paragraph font-bold text-[#293B48] leading-tight font-advent-pro">
+										<p className="paragraph font-bold text-[#293B48] leading-tight font-dm-serif-text">
 											+(301) 439-6700
 										</p>
 									</div>
@@ -81,7 +81,7 @@ export default function ContactForm() {
 										<p className="text-base text-[#293B48] font-bold leading-tight">
 											Send Enquiry
 										</p>
-										<p className="paragraph font-bold text-[#293B48] leading-tight font-advent-pro">
+										<p className="paragraph font-bold text-[#293B48] leading-tight font-dm-serif-text">
 											Dummy@gmail.com
 										</p>
 									</div>

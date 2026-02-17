@@ -4,7 +4,7 @@ export default function PrivacyPolicy() {
 	return (
 		<LegalContent>
 			<section className="flex flex-col gap-4">
-				<h2 className="text-2xl font-bold font-advent-pro">
+				<h2 className="text-2xl font-bold font-dm-serif-text">
 					1. Information Collection
 				</h2>
 				<p className="paragraph leading-relaxed">
@@ -16,7 +16,7 @@ export default function PrivacyPolicy() {
 			</section>
 
 			<section className="flex flex-col gap-4">
-				<h2 className="text-2xl font-bold font-advent-pro">
+				<h2 className="text-2xl font-bold font-dm-serif-text">
 					2. Use of Information
 				</h2>
 				<p className="paragraph leading-relaxed">
@@ -28,7 +28,7 @@ export default function PrivacyPolicy() {
 			</section>
 
 			<section className="flex flex-col gap-4">
-				<h2 className="text-2xl font-bold font-advent-pro">
+				<h2 className="text-2xl font-bold font-dm-serif-text">
 					3. Information Sharing
 				</h2>
 				<p className="paragraph leading-relaxed">
@@ -40,7 +40,7 @@ export default function PrivacyPolicy() {
 			</section>
 
 			<section className="flex flex-col gap-4">
-				<h2 className="text-2xl font-bold font-advent-pro">4. Security</h2>
+				<h2 className="text-2xl font-bold font-dm-serif-text">4. Security</h2>
 				<p className="paragraph leading-relaxed">
 					We take reasonable measures to help protect information about you from
 					loss, theft, misuse, and unauthorized access, disclosure, alteration,
@@ -49,7 +49,7 @@ export default function PrivacyPolicy() {
 			</section>
 
 			<section className="flex flex-col gap-4">
-				<h2 className="text-2xl font-bold font-advent-pro">5. Contact Us</h2>
+				<h2 className="text-2xl font-bold font-dm-serif-text">5. Contact Us</h2>
 				<p className="paragraph leading-relaxed">
 					If you have any questions about this Privacy Policy, please contact
 					us.

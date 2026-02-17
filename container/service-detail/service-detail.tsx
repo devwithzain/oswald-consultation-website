@@ -20,7 +20,7 @@ export default function ServiceDetail({ services }: { services: string }) {
 					<p className="w-fit bg-[#CE7E3F] text-white px-4 py-2 rounded-full">
 						Services
 					</p>
-					<h2 className="heading text-[#293B48] font-bold font-advent-pro leading-tight">
+					<h2 className="heading text-[#293B48] font-medium font-dm-serif-text leading-tight max-w-lg">
 						{service?.title}
 					</h2>
 					<p className="paragraph text-[#293B48] font-normal leading-normal">

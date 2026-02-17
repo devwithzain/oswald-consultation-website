@@ -8,7 +8,7 @@ export default function Services() {
 	return (
 		<div className="w-full padding-x padding-y bg-white">
 			<div className="w-full flex items-center justify-center">
-				<h2 className="heading text-[#293B48] font-bold font-advent-pro leading-tight">
+				<h2 className="heading text-[#293B48] font-medium font-dm-serif-text leading-tight">
 					Other Services
 				</h2>
 			</div>

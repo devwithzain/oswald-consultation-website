@@ -3,7 +3,7 @@ export default function LegalHero({ title }: { title: string }) {
 		<div className="w-full h-[50vh]">
 			<div className="w-full h-full bg-[url('/homeheroimg.png')] bg-cover bg-center bg-no-repeat">
 				<div className="w-full h-full flex items-center justify-center padding-x padding-y relative z-50 bg-black/40">
-					<h1 className="heading text-white font-bold font-advent-pro leading-tight text-center">
+					<h1 className="heading text-white font-medium font-dm-serif-text leading-tight text-center">
 						{title}
 					</h1>
 				</div>

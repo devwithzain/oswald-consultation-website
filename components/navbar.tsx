@@ -5,7 +5,7 @@ import { navbarlinks } from "@/constants";
 
 export default function Navbar() {
 	return (
-		<div className="w-full absolute top-0 left-0 z-999 bg-white padding-x py-3">
+		<div className="w-full absolute top-0 left-0 z-999 bg-white padding-x py-5">
 			<div className="w-full flex items-center justify-between gap-5 relative">
 				<div className="bg-white px-6 py-4 rounded-b-xl absolute top-[-12px] left-0">
 					<Image

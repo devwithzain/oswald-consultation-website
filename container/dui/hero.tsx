@@ -3,7 +3,7 @@ export default function Hero() {
 		<div className="w-full h-[50vh]">
 			<div className="w-full h-full bg-[url('/homeheroimg.png')] bg-cover bg-center bg-no-repeat">
 				<div className="w-full h-full flex items-center justify-center padding-x padding-y relative z-50">
-					<h1 className="heading text-white font-bold font-advent-pro leading-tight">
+					<h1 className="heading text-white font-medium font-dm-serif-text leading-tight">
 						DUI/DWI Programs
 					</h1>
 				</div>

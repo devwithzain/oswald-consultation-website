@@ -14,8 +14,8 @@ export default function Services() {
 					className="w-fit bg-[#CE7E3F] text-white px-4 py-2 rounded-full">
 					Services
 				</Link>
-				<h2 className="heading text-[#293B48] font-bold font-advent-pro leading-tight">
-					Get treatment for all your mental healthcare needs.
+				<h2 className="heading text-[#293B48] capitalize font-medium font-dm-serif-text leading-tight">
+					Get treatment for all <br /> your mental healthcare needs.
 				</h2>
 			</div>
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">

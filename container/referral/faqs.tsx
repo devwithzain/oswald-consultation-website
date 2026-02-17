@@ -18,7 +18,7 @@ export default function Referral() {
 					<div className="w-fit bg-[#CE7E3F] text-white px-4 py-1 rounded-full">
 						Faq&apos;s
 					</div>
-					<h2 className="heading text-[#293B48] font-bold font-advent-pro leading-tight">
+					<h2 className="heading text-[#293B48] font-medium font-dm-serif-text leading-tight">
 						Frequently Asked Questions
 					</h2>
 					<p className="paragraph text-[#293B48] font-normal leading-normal">

@@ -18,7 +18,7 @@ export default function CTA() {
 						<div className="w-fit bg-[#CE7E3F] text-white px-4 py-1 rounded-full">
 							Survey Form
 						</div>
-						<h2 className="heading text-white font-bold font-advent-pro leading-tight">
+						<h2 className="heading text-white font-medium font-dm-serif-text leading-tight">
 							Feedback / Customer Service
 						</h2>
 						<p className="paragraph text-white font-normal leading-normal">

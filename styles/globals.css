@@ -1,10 +1,9 @@
 @import "tailwindcss";
-
 @custom-variant dark (&:is(.dark *));
 
 @theme {
 	--font-geist-sans: var(--font-geist-sans);
-	--font-advent-pro: var(--font-advent-pro);
+	--font-dm-serif-text: var(--font-dm-serif-text);
 }
 
 body::-webkit-scrollbar {

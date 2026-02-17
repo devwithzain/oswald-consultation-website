@@ -31,7 +31,7 @@ export default function About() {
 						<p className="text-base text-[#CE7E3F] font-medium leading-tight tracking-tight bg-[#CE7E3F]/10 w-fit px-4 py-2 rounded-full">
 							About Us
 						</p>
-						<h2 className="heading text-white font-bold font-advent-pro leading-tight">
+						<h2 className="heading text-white font-medium font-dm-serif-text leading-tight">
 							DUI/DWI & Substance Abuse Services
 						</h2>
 					</div>

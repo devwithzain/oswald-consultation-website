@@ -4,7 +4,7 @@ export default function CookiePolicy() {
 	return (
 		<LegalContent>
 			<section className="flex flex-col gap-4">
-				<h2 className="text-2xl font-bold font-advent-pro">
+				<h2 className="text-2xl font-bold font-dm-serif-text">
 					1. What Are Cookies
 				</h2>
 				<p className="paragraph leading-relaxed">
@@ -16,7 +16,7 @@ export default function CookiePolicy() {
 			</section>
 
 			<section className="flex flex-col gap-4">
-				<h2 className="text-2xl font-bold font-advent-pro">
+				<h2 className="text-2xl font-bold font-dm-serif-text">
 					2. How We Use Cookies
 				</h2>
 				<p className="paragraph leading-relaxed">
@@ -27,7 +27,7 @@ export default function CookiePolicy() {
 			</section>
 
 			<section className="flex flex-col gap-4">
-				<h2 className="text-2xl font-bold font-advent-pro">
+				<h2 className="text-2xl font-bold font-dm-serif-text">
 					3. Types of Cookies We Use
 				</h2>
 				<ul className="list-disc pl-6 paragraph leading-relaxed space-y-2">
@@ -47,7 +47,7 @@ export default function CookiePolicy() {
 			</section>
 
 			<section className="flex flex-col gap-4">
-				<h2 className="text-2xl font-bold font-advent-pro">
+				<h2 className="text-2xl font-bold font-dm-serif-text">
 					4. Managing Cookies
 				</h2>
 				<p className="paragraph leading-relaxed">

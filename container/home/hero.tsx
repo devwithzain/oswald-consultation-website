@@ -10,7 +10,7 @@ export default function Hero() {
 		<div className="w-full h-dvh">
 			<div className="w-full h-full bg-[url('/homeheroimg.png')] bg-cover bg-center bg-no-repeat">
 				<div className="w-full h-full flex items-end justify-end padding-x padding-y relative z-50">
-					<div className="w-full flex items-center justify-center">
+					<div className="w-full flex items-center justify-center mb-10">
 						<div className="w-[80%] flex items-center justify-between gap-10">
 							<motion.div
 								variants={containerVariants}
@@ -19,7 +19,7 @@ export default function Hero() {
 								className="max-w-4xl flex flex-col gap-5">
 								<motion.h1
 									variants={itemVariants}
-									className="heading text-white font-bold font-advent-pro leading-tight">
+									className="heading text-white font-medium font-dm-serif-text leading-tight">
 									O.R.E.A, LLC is a Maryland State Licensed and ACHC Accredited
 									Early Intervention Education, Counseling and Treatment
 									program.

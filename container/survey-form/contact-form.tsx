@@ -16,7 +16,7 @@ export default function ContactForm() {
 					className="w-[70%] mx-auto bg-[#F8F9FA] rounded-2xl p-10 flex flex-col gap-10 border border-[#A1A1A1]">
 					<SplitText
 						text="Survey Form"
-						className="heading text-[#293B48] font-bold font-advent-pro leading-tight"
+						className="heading text-[#293B48] font-medium font-dm-serif-text leading-tight"
 						delay={20}
 						duration={1}
 						ease="power3.out"

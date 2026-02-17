@@ -14,7 +14,7 @@ export default function Eap() {
 						viewport={{ once: true }}
 						transition={{ duration: 0.8 }}
 						className="w-full flex flex-col gap-8">
-						<h2 className="heading text-[#293B48] font-bold font-advent-pro leading-tight">
+						<h2 className="heading text-[#293B48] font-medium font-dm-serif-text leading-tight">
 							EAP ( Employee Assistance Program )
 						</h2>
 						<p className="paragraph text-[#293B48] font-normal leading-normal">
@@ -33,7 +33,7 @@ export default function Eap() {
 						viewport={{ once: true }}
 						transition={{ duration: 0.8 }}
 						className="w-full flex flex-col gap-8">
-						<h2 className="heading text-[#293B48] font-bold font-advent-pro leading-tight">
+						<h2 className="heading text-[#293B48] font-medium font-dm-serif-text leading-tight">
 							12 Hour Education
 						</h2>
 						<p className="paragraph text-[#293B48] font-normal leading-normal">

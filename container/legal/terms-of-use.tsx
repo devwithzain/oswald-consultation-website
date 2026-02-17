@@ -4,7 +4,7 @@ export default function TermsOfUse() {
 	return (
 		<LegalContent>
 			<section className="flex flex-col gap-4">
-				<h2 className="text-2xl font-bold font-advent-pro">
+				<h2 className="text-2xl font-bold font-dm-serif-text">
 					1. Acceptance of Terms
 				</h2>
 				<p className="paragraph leading-relaxed">
@@ -15,7 +15,7 @@ export default function TermsOfUse() {
 			</section>
 
 			<section className="flex flex-col gap-4">
-				<h2 className="text-2xl font-bold font-advent-pro">
+				<h2 className="text-2xl font-bold font-dm-serif-text">
 					2. Use of Services
 				</h2>
 				<p className="paragraph leading-relaxed">
@@ -28,7 +28,7 @@ export default function TermsOfUse() {
 			</section>
 
 			<section className="flex flex-col gap-4">
-				<h2 className="text-2xl font-bold font-advent-pro">
+				<h2 className="text-2xl font-bold font-dm-serif-text">
 					3. Intellectual Property
 				</h2>
 				<p className="paragraph leading-relaxed">
@@ -40,7 +40,7 @@ export default function TermsOfUse() {
 			</section>
 
 			<section className="flex flex-col gap-4">
-				<h2 className="text-2xl font-bold font-advent-pro">
+				<h2 className="text-2xl font-bold font-dm-serif-text">
 					4. Limitation of Liability
 				</h2>
 				<p className="paragraph leading-relaxed">
@@ -52,7 +52,7 @@ export default function TermsOfUse() {
 			</section>
 
 			<section className="flex flex-col gap-4">
-				<h2 className="text-2xl font-bold font-advent-pro">
+				<h2 className="text-2xl font-bold font-dm-serif-text">
 					5. Changes to Terms
 				</h2>
 				<p className="paragraph leading-relaxed">

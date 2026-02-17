@@ -19,7 +19,7 @@ export default function WhyChooseUs() {
 						<p className="w-fit bg-[#CE7E3F] text-white px-4 py-2 rounded-full">
 							Focusing on you
 						</p>
-						<h2 className="heading text-[#293B48] font-bold font-advent-pro leading-tight">
+						<h2 className="heading text-[#293B48] font-medium font-dm-serif-text leading-tight">
 							Why Choose Us
 						</h2>
 						<p className="paragraph text-gray-600">
@@ -44,7 +44,7 @@ export default function WhyChooseUs() {
 									height={50}
 								/>
 								<div className="flex flex-col">
-									<h3 className="subHeading font-bold text-[#293B48] font-advent-pro group-hover:text-[#CE7E3F] transition-colors">
+									<h3 className="subHeading font-bold text-[#293B48] font-dm-serif-text group-hover:text-[#CE7E3F] transition-colors">
 										{reason.title}
 									</h3>
 									<p className="paragraph text-gray-500 leading-relaxed">

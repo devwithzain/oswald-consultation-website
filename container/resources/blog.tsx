@@ -12,7 +12,7 @@ export default function BlogSection() {
 						<div className="w-fit bg-[#CE7E3F] text-white px-4 py-1 rounded-full">
 							News
 						</div>
-						<h2 className="heading text-[#293B48] font-bold font-advent-pro leading-tight">
+						<h2 className="heading text-[#293B48] font-medium font-dm-serif-text leading-tight">
 							Latest From Blogs
 						</h2>
 						<p className="paragraph text-[#293B48] font-normal leading-normal">
@@ -41,7 +41,7 @@ export default function BlogSection() {
 								<p className="paragraph font-bold text-[#293B48] leading-tight">
 									{blog.category}
 								</p>
-								<h3 className="subHeading font-bold text-[#293B48] leading-tight font-advent-pro group-hover:text-[#CE7E3F] transition">
+								<h3 className="subHeading font-bold text-[#293B48] leading-tight font-dm-serif-text group-hover:text-[#CE7E3F] transition">
 									{blog.title}
 								</h3>
 								<p className="paragraph text-[#CE7E3F] font-medium leading-tight">

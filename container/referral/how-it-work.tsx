@@ -16,7 +16,7 @@ export default function HowItWork() {
 					transition={{ duration: 0.8 }}
 					className="w-full lg:w-1/2 flex flex-col gap-8 order-2 lg:order-1">
 					<div className="flex flex-col gap-4">
-						<h2 className="heading text-[#293B48] font-bold font-advent-pro leading-tight">
+						<h2 className="heading text-[#293B48] font-medium font-dm-serif-text leading-tight">
 							How It Work
 						</h2>
 						<p className="paragraph text-gray-600">
@@ -40,7 +40,7 @@ export default function HowItWork() {
 									height={50}
 								/>
 								<div className="flex flex-col">
-									<h3 className="subHeading font-bold text-[#293B48] font-advent-pro group-hover:text-[#CE7E3F] transition-colors">
+									<h3 className="subHeading font-bold text-[#293B48] font-dm-serif-text group-hover:text-[#CE7E3F] transition-colors">
 										{reason.title}
 									</h3>
 									<p className="paragraph text-gray-500 leading-relaxed">
@@ -75,7 +75,7 @@ export default function HowItWork() {
 						<Image
 							src={aboutchoseusimg}
 							alt="Why Choose Us"
-							className="w-full h-full object-cover"
+							className="w-full h-full object-cover rounded-xl"
 						/>
 						<div className="absolute inset-0 bg-[#293B48]/10" />
 					</div>
