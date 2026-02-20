@@ -6,7 +6,7 @@ import {
 	HomeSpecialists,
 	HomeWhyChooseUs,
 } from "@/container";
-import { CTA, Testimonials } from "@/components";
+import { CTA, Testimonials } from "@/components/index";
 
 export default function HomePage() {
 	return (

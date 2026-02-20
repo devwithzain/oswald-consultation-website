@@ -1,4 +1,4 @@
-import { ContactForm, Footer, Navbar } from "@/components";
+import { ContactForm, Footer, Navbar } from "@/components/index";
 
 export default function RootLayout({
 	children,

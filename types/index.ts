@@ -13,3 +13,30 @@ export interface SplitTextProps {
 	textAlign?: React.CSSProperties["textAlign"];
 	onLetterAnimationComplete?: () => void;
 }
+
+export type TmailData = {
+	user: {
+		name: string;
+		email: string;
+	};
+	url: string;
+};
+
+export type TmailTokenData = {
+	user: {
+		name: string;
+		email: string;
+	};
+	token: string;
+};
+
+export type TwoFactorData = {
+	totpURI: string;
+	backupCodes: string[];
+};
+
+export type ProfileUpdateFormType = {
+	name?: string;
+	email?: string;
+	image?: string | undefined;
+};

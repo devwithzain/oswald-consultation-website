@@ -1,0 +1,217 @@
+"use client";
+import {
+	QrForm,
+	QrSchema,
+	TwoFactorAuthForm,
+	TwoFactorAuthSchema,
+} from "@/schemas";
+import {
+	Form,
+	FormControl,
+	FormField,
+	FormItem,
+	FormLabel,
+	FormMessage,
+} from "@/components/ui/form";
+import { toast } from "sonner";
+import { useState } from "react";
+import QRCode from "react-qr-code";
+import { TwoFactorData } from "@/types";
+import { useForm } from "react-hook-form";
+import { useRouter } from "next/navigation";
+import { Input } from "@/components/ui/input";
+import { authClient } from "@/lib/auth-client";
+import { Button } from "@/components/ui/button";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { LoadingSwap } from "@/components/ui/loading-swap";
+
+export function TwoFactorAuth({ isEnabled }: { isEnabled: boolean }) {
+	const [twoFactorData, setTwoFactorData] = useState<TwoFactorData | null>(
+		null,
+	);
+	const router = useRouter();
+	const form = useForm<TwoFactorAuthForm>({
+		resolver: zodResolver(TwoFactorAuthSchema),
+		defaultValues: { password: "" },
+	});
+
+	const {
+		handleSubmit,
+		reset,
+		formState: { isSubmitting },
+	} = form;
+
+	async function handleDisableTwoFactorAuth(data: TwoFactorAuthForm) {
+		await authClient.twoFactor.disable(
+			{
+				password: data.password,
+			},
+			{
+				onError: (error) => {
+					toast.error(error.error.message || "Failed to disable 2FA");
+				},
+				onSuccess: () => {
+					reset();
+					router.refresh();
+				},
+			},
+		);
+	}
+
+	async function handleEnableTwoFactorAuth(data: TwoFactorAuthForm) {
+		const result = await authClient.twoFactor.enable({
+			password: data.password,
+		});
+
+		if (result.error) {
+			toast.error(result.error.message || "Failed to enable 2FA");
+		}
+		{
+			setTwoFactorData(result.data);
+			reset();
+		}
+	}
+
+	if (twoFactorData != null) {
+		return (
+			<QRCodeVerify
+				{...twoFactorData}
+				onDone={() => {
+					setTwoFactorData(null);
+				}}
+			/>
+		);
+	}
+
+	return (
+		<Form {...form}>
+			<form
+				className="space-y-4"
+				onSubmit={handleSubmit(
+					isEnabled ? handleDisableTwoFactorAuth : handleEnableTwoFactorAuth,
+				)}>
+				<FormField
+					control={form.control}
+					name="password"
+					render={({ field }) => (
+						<FormItem>
+							<FormLabel>Password</FormLabel>
+							<FormControl>
+								<Input {...field} />
+							</FormControl>
+							<FormMessage />
+						</FormItem>
+					)}
+				/>
+				<Button
+					type="submit"
+					disabled={isSubmitting}
+					className="w-full"
+					variant={isEnabled ? "destructive" : "default"}>
+					<LoadingSwap isLoading={isSubmitting}>
+						{isEnabled ? "Disable 2FA" : "Enable 2FA"}
+					</LoadingSwap>
+				</Button>
+			</form>
+		</Form>
+	);
+}
+
+function QRCodeVerify({
+	totpURI,
+	backupCodes,
+	onDone,
+}: TwoFactorData & { onDone: () => void }) {
+	const [successfullyEnabled, setSuccessfullyEnabled] = useState(false);
+	const router = useRouter();
+	const form = useForm<QrForm>({
+		resolver: zodResolver(QrSchema),
+		defaultValues: { token: "" },
+	});
+
+	const {
+		handleSubmit,
+		formState: { isSubmitting },
+	} = form;
+
+	async function handleQrCode(data: QrForm) {
+		await authClient.twoFactor.verifyTotp(
+			{
+				code: data.token,
+			},
+			{
+				onError: (error) => {
+					toast.error(error.error.message || "Failed to verify code");
+				},
+				onSuccess: () => {
+					setSuccessfullyEnabled(true);
+					router.refresh();
+				},
+			},
+		);
+	}
+
+	if (successfullyEnabled) {
+		return (
+			<>
+				<p className="text-sm text-muted-foreground mb-2">
+					Save these backup codes in a safe place. You can use them to access
+					your account.
+				</p>
+				<div className="grid grid-cols-2 gap-2 mb-4">
+					{backupCodes.map((code, index) => (
+						<div
+							key={index}
+							className="font-mono text-sm">
+							{code}
+						</div>
+					))}
+				</div>
+				<Button
+					variant="outline"
+					onClick={onDone}>
+					Done
+				</Button>
+			</>
+		);
+	}
+
+	return (
+		<div className="space-y-4">
+			<p className="text-muted-foreground">
+				Scan this QR code with your authenticator app and enter the code below:
+			</p>
+			<Form {...form}>
+				<form
+					className="space-y-4"
+					onSubmit={handleSubmit(handleQrCode)}>
+					<FormField
+						control={form.control}
+						name="token"
+						render={({ field }) => (
+							<FormItem>
+								<FormLabel>Code</FormLabel>
+								<FormControl>
+									<Input {...field} />
+								</FormControl>
+								<FormMessage />
+							</FormItem>
+						)}
+					/>
+					<Button
+						type="submit"
+						disabled={isSubmitting}
+						className="w-full">
+						<LoadingSwap isLoading={isSubmitting}>Submit Code</LoadingSwap>
+					</Button>
+				</form>
+			</Form>
+			<div className="p-4 bg-white w-fit">
+				<QRCode
+					size={256}
+					value={totpURI}
+				/>
+			</div>
+		</div>
+	);
+}

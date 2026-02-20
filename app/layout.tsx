@@ -1,7 +1,9 @@
 import "@/styles/globals.css";
 import ReactLenis from "lenis/react";
 import type { Metadata } from "next";
+import { Toaster } from "@/components/ui/sonner";
 import { Geist, DM_Serif_Text } from "next/font/google";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -16,8 +18,8 @@ const dmSerifText = DM_Serif_Text({
 });
 
 export const metadata: Metadata = {
-	title: "Oswald",
-	description: "Oswald",
+	title: "Oswald Consultation Website",
+	description: "Oswald Consultation Website",
 };
 
 export default function RootLayout({
@@ -26,11 +28,20 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<html
+			lang="en"
+			suppressHydrationWarning>
 			<body
 				className={`${geistSans.variable} ${dmSerifText.variable} antialiased font-geist-sans`}>
-				<ReactLenis />
-				{children}
+				<ThemeProvider
+					attribute="class"
+					defaultTheme="system"
+					enableSystem
+					disableTransitionOnChange>
+					{children}
+					<Toaster />
+					<ReactLenis />
+				</ThemeProvider>
 			</body>
 		</html>
 	);
