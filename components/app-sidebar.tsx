@@ -30,7 +30,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
 							height={15}
 						/>
 					</div>
-					<span className="font-semibold text-lg">Oswald</span>
+					<span className="font-semibold text-lg">Oswalds</span>
 				</div>
 			</SidebarHeader>
 			<SidebarContent>
